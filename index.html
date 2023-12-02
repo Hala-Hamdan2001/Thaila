@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo (1).png" type="image/x-icon" />
+    <!-- bootstrap 5.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome 6.4 -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- custom css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Thaila-Hotel and Resort</title>
+</head>
+<body>
+  <div class="loading bg-white position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
+    <span class="loader"></span>
+  </div>
+  <div class="scroll-to-top z-2 opacity-0 invisible position-fixed bg-success text-white rounded-circle d-flex justify-content-center align-items-center">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+<!-- start navbar -->
+<nav class="navbar navbar-expand-lg fixed-top z-2">
+        <div class="container">
+          <img src="assets/img/logo (1).png" alt="logo img">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <img src="assets/img/images-removebg-preview.png" alt="navbar img">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="rooms.html">ROOMS</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about-us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="search.html" class="text-decoration-none ">
+                    <span>BOOK NOW</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+</nav>
+<!-- end navbar -->
+
+<!-- start header -->
+<header>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image bg-img-1 active pt-5">
+          <div class="carousel-caption top-0 text-center ">
+            <div class="row justify-content-center mt-3">
+              <div class="hero-text text-white pt-5">Discover your paradise<br> under the Greek sky</div>
+            </div>
+            <div class="hero-stars mt-1">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="check-avalabeldate mt-5 container">
+               <div class="booking-hero-wrap">
+                <div class="row justify-content-center">
+                  <div class="col-md-2">
+                     <div class="form-item">
+                        <input class="input-sm text-start" type="text" autocomplete="off" 
+                        name="start" placeholder="chech-in date" onfocus="this.type='date'">
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-item">
+                      <input class="input-sm" type="text" autocomplete="off" 
+                      name="end" placeholder="check-out date" onfocus="this.type='date'">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <select name="adults" class="nice-select w-100">
+                      <option data-display="adults">adults</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                    </select>
+                  </div>
+                 <div class="col-md-2">
+                  <select name="children" class="nice-select w-100">
+                    <option data-display="children">children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                 </div>
+                 <div class="col-md-2">
+                    <a class="booking-button text-decoration-none" href="search.html">book now</a>
+                 </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-2 pt-5">
+          <div class="carousel-caption top-0 text-center ">
+            <div class="row justify-content-center mt-3">
+              <div class="hero-text text-white pt-5">Discover your paradise<br> under the Greek sky</div>
+            </div>
+            <div class="hero-stars mt-1">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="check-avalabeldate mt-5 container">
+               <div class="booking-hero-wrap">
+                <div class="row justify-content-center">
+                  <div class="col-md-2">
+                     <div class="form-item">
+                        <input class="input-sm text-start" type="text" autocomplete="off" 
+                        name="start" placeholder="chech-in date" onfocus="this.type='date'">
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-item">
+                      <input class="input-sm" type="text" autocomplete="off" 
+                      name="end" placeholder="check-out date" onfocus="this.type='date'">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <select name="adults" class="nice-select w-100">
+                      <option data-display="adults">adults</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                    </select>
+                  </div>
+                 <div class="col-md-2">
+                  <select name="children" class="nice-select w-100">
+                    <option data-display="children">children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                 </div>
+                 <div class="col-md-2">
+                    <a class="booking-button text-decoration-none" href="search.html">book now</a>
+                 </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-3 pt-5">
+          <div class="carousel-caption top-0 text-center ">
+            <div class="row justify-content-center mt-3">
+              <div class="hero-text text-white pt-5">Discover your paradise<br> under the Greek sky</div>
+            </div>
+            <div class="hero-stars mt-1">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="check-avalabeldate mt-5 container">
+               <div class="booking-hero-wrap">
+                <div class="row justify-content-center">
+                  <div class="col-md-2">
+                     <div class="form-item">
+                        <input class="input-sm text-start" type="text" autocomplete="off" 
+                        name="start" placeholder="chech-in date" onfocus="this.type='date'">
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-item">
+                      <input class="input-sm" type="text" autocomplete="off" 
+                      name="end" placeholder="check-out date" onfocus="this.type='date'">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <select name="adults" class="nice-select w-100">
+                      <option data-display="adults">adults</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                    </select>
+                  </div>
+                 <div class="col-md-2">
+                  <select name="children" class="nice-select w-100">
+                    <option data-display="children">children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                 </div>
+                 <div class="col-md-2">
+                    <a class="booking-button text-decoration-none" href="search.html">book now</a>
+                 </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="background-dark-2 py-5">
+      <div class="text-center">
+        <h2 class="nav__chapter">discover your paradise</h2>
+      </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start hotel -->
+<section class="hotel my-lg-5 my-md-3 my-sm-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center p-lg-5 mt-lg-5 mt-md-0"><br>
+                    <span class="subtitle mb-4  mt-5">hotel Thalia</span>
+                    <h2 class=" my-5">Here is a tribute to good life!</h2>
+                    <p class=" mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> 
+                                     blanditiis praesentium voluptatum deleniti atque corrupti quos<br> 
+                                     dolores et quas molestias excepturi sint occaecati cupiditate non <br>
+                                     provident.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-sm-3">
+                    <img src="assets/img/rooms.png" alt="rooms image">
+                </div>
+            </div>
+        </div>
+</section>
+<!-- end hotel -->
+
+<!-- start services -->
+<section class="services my-5">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 m-0 p-0 position-relative order-lg-1 order-md-1 order-sm-1 order-1">
+            <img src="assets/img/room1 (1).jpg" alt="room1 pic" class="img-fluid">
+            <div class="button-img text-uppercase">private pool suite</div>
+          </div>
+          <div class="col-lg-6 m-0 p-0 order-lg-1 order-md-2 order-sm-2 order-1">
+           <div class="check text-center">
+            <h2>Private pool suite</h2>
+            <p class=" mt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> 
+                                        accusantium doloremque laudantium, totam rem aperiam, eaque<br> 
+                                        ipsa quae ab illo inventore veritatis et.<br>
+            </p>
+            <button class="text-uppercase ">check availability</button>
+           </div>
+          </div>
+          <div class="col-lg-6 m-0 p-0 order-lg-1 order-md-5 order-sm-4 order-4">
+            <div class="check text-center">
+             <h2>Sea View Suite</h2>
+             <p class=" mt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> 
+                                         accusantium doloremque laudantium, totam rem aperiam, eaque<br> 
+                                         ipsa quae ab illo inventore veritatis et.<br>
+             </p>
+             <button class="text-uppercase ">check availability</button>
+            </div>
+           </div>
+           <div class="col-lg-6 m-0 p-0 position-relative order-lg-1 order-md-2 order-sm-1 order-2">
+            <img src="assets/img/room2.jpg" alt="room2 pic" class="img-fluid">
+            <div class="button-img text-uppercase">Sea View Suite</div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="background-dark container-fluid py-4">
+        <div class="row">
+           <div class="col-lg-3 col-md-6 mb-md-4 scale-hover">
+             <a href="services.html">
+               <div class=" position-relative overflow-hidden">
+                 <img src="assets/img/ser-1.jpg" alt="spa salon pic" class="w-100">
+                 <div class="services-text-over">spa salon</div>
+               </div>
+             </a>
+           </div>
+           <div class="col-lg-3 col-md-6 mb-md-4 scale-hover">
+             <a href="services.html">
+               <div class=" position-relative overflow-hidden">
+                 <img src="assets/img/ser-2.jpg" alt="spa salon pic" class="w-100">
+                 <div class="services-text-over">restaurant</div>
+               </div>
+             </a>
+           </div>
+           <div class="col-lg-3 col-md-6 mb-md-4 scale-hover">
+             <a href="services.html">
+               <div class=" position-relative overflow-hidden">
+                 <img src="assets/img/ser-3.jpg" alt="spa salon pic" class="w-100">
+                 <div class="services-text-over">pool</div>
+               </div>
+             </a>
+           </div>
+           <div class="col-lg-3 col-md-6 mb-md-4 scale-hover">
+             <a href="services.html">
+               <div class=" position-relative overflow-hidden">
+                 <img src="assets/img/ser-4.jpg" alt="spa salon pic" class="w-100">
+                 <div class="services-text-over">activities</div>
+               </div>
+             </a>
+           </div>
+         </div>
+    </div>
+</section>
+<!-- end services -->
+
+<!-- start advantages -->
+<section class="advantages my-5 py-5">
+    <div class="container">
+      <div class="m-auto">
+        <div class="subtitle with-line text-center mb-4">elegant suites</div>
+        <h2 class="text-center">Unpretentious luxury</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/1.svg" alt="smoking free img">
+            <h3 class="mt-2 text-capitalize">smoking free</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/2.svg" alt="king beds img">
+            <h3 class="mt-2 text-capitalize">king beds</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/3.svg" alt="Yacht rental img">
+            <h3 class="mt-2 text-capitalize">Yacht rental</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/4.svg" alt="drinks pic">
+            <h3 class="mt-2 text-capitalize">welcome drink</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/5.svg" alt="swimming pool img">
+            <h3 class="mt-2 text-capitalize">swimming pool</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="position-relative text-center">
+            <img src="assets/img/6.svg" alt="food included img">
+            <h3 class="mt-2 text-capitalize">food included</h3>
+            <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+            <a class="mt-1 btn btn-primary text-uppercase border-0 " href="services.html">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end advantages -->
+
+<!-- start booking -->
+<section class="booking my-5 overflow-hidden">
+    <div class="bg py-5">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-center form-proparety">
+                    <div class="col-lg-3 col-md-12 p-0">
+                      <div class="form-item">
+                        <input type="text" class="text-uppercase text-white" placeholder="check-in" onfocus="this.type='date'" >
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 p-0">
+                      <div class="form-item">
+                        <input type="text" class="text-uppercase text-white" placeholder="check-out" onfocus="this.type='date'">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 p-0">
+                          <div class="position-relative">
+                              <input type="number" min="1" max="9999" value="1" class="text-white" id="inputval">
+                              <div class="quantity-nav">
+                                  <div class="quantity-button quantity-up"></div>
+                                  <div class="quantity-button quantity-down"></div>
+                              </div>
+                          </div>	
+                    </div>
+                    <div class="col-lg-3 col-md-12 p-0">
+                          <a class="booking-button-big text-decoration-none" href="search.html">check availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+  </section>
+<!-- end booking -->
+
+<!-- start rooms -->
+<section class="rooms my-5 mt-5 pt-5">
+    <div class="container">
+      <div class="m-auto">
+        <div class="subtitle with-line text-center mb-4">luxury</div>
+        <h2 class="text-center">Our Rooms</h2>
+      </div>
+      <div class="row justify-content-center py-5">
+        <div class="col-md-6">
+          <div class="room-box bg-white">
+            <div class="room-name">suite tanya</div>
+            <div class="room-per">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="assets/img/room3.jpg" alt="room3 pic" class="img-fluid w-100">
+
+            <div class="position-relative p-4">
+              <h3 class="">pool suite</h3>
+              <p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+              <a class="mt-1 btn btn-primary border-0" href="rooms-gallery.html">book from 130$</a>
+            </div>
+
+            <div class="room-icons my-3 mx-4 p-3">
+              <img src="assets/img/5.svg" alt="swimming pool img">
+              <img src="assets/img/2.svg" alt="king beds img">
+              <img src="assets/img/3.svg" alt="Yacht rental img">
+              <img src="assets/img/1.svg" alt="smoking free img">
+              <a href="rooms-gallery.html" class="ms-5 ps-5 text-uppercase text-decoration-none textend ">full info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="room-box bg-white">
+            <div class="room-name">suite tanya</div>
+            <div class="room-per">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="assets/img/room4.jpg" alt="room4 pic" class="img-fluid w-100">
+
+            <div class="position-relative p-4">
+              <h3 class="">small room</h3>
+              <p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+              <a class="mt-1 btn btn-primary border-0" href="rooms-gallery.html">book from 80$</a>
+            </div>
+
+            <div class="room-icons my-3 mx-4 p-3">
+              <img src="assets/img/4.svg" alt="drinks pic">
+              <img src="assets/img/2.svg" alt="king beds img">
+              <img src="assets/img/6.svg" alt="food included img">
+              <img src="assets/img/3.svg" alt="Yacht rental img">
+              <a href="rooms-gallery.html" class="ms-5 ps-5 text-uppercase text-decoration-none textend ">full info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="room-box bg-white">
+            <div class="room-name">suite tanya</div>
+            <div class="room-per">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="assets/img/room5.jpg" alt="room5 pic" class="img-fluid w-100">
+
+            <div class="position-relative p-4">
+              <h3 class="">Apartment</h3>
+              <p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+              <a class="mt-1 btn btn-primary border-0" href="rooms-gallery.html">book from 110$</a>
+            </div>
+
+            <div class="room-icons my-3 mx-4 p-3">
+              <img src="assets/img/5.svg" alt="swimming pool img">
+              <img src="assets/img/2.svg" alt="king beds img">
+              <img src="assets/img/3.svg" alt="Yacht rental img">
+              <img src="assets/img/4.svg" alt="drinks img">
+              <a href="rooms-gallery.html" class="ms-5 ps-5 text-uppercase text-decoration-none textend ">full info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="room-box bg-white">
+            <div class="room-name">suite tanya</div>
+            <div class="room-per">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="assets/img/room6.jpg" alt="room6 pic" class="img-fluid w-100">
+
+            <div class="position-relative p-4">
+              <h3 class="">Big Apartment</h3>
+              <p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
+              <a class="mt-1 btn btn-primary border-0" href="rooms-gallery.html">book from 160$</a>
+            </div>
+
+            <div class="room-icons my-3 mx-4 p-3">
+              <img src="assets/img/5.svg" alt="swimming pool img">
+              <img src="assets/img/2.svg" alt="king beds img">
+              <img src="assets/img/3.svg" alt="Yacht rental img">
+              <img src="assets/img/4.svg" alt="drinks img">
+              <a href="rooms-gallery.html" class="ms-5 ps-5 text-uppercase text-decoration-none textend ">full info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end rooms -->
+
+<!-- start comments -->
+<section class="comments w-100 my-5">
+    <div class="container">
+      <div class="row justify-content-center py-5 my-5">
+        <div id="carouselExampleIndicators" class="carousel slide mt-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <div class="mt-2">					
+								<div class="quote-sep">
+									<p>"Chilling out on the bed in your hotel room watching television, while wearing your own 
+                      pajamas, is sometimes the best part of a vacation."</p>
+									<span class="text-uppercase">Jason Salvatore</span>
+								</div>										
+							</div>
+            </div>
+            <div class="carousel-item">
+              <div class="mt-2">					
+								<div class="quote-sep">
+									<p>"Every good day starts off with a cappuccino, and there's no place better to enjoy some 
+                      frothy caffeine than at the Thalia Hotel."</p>
+									<span class="text-uppercase">Terry Mitchell</span>
+								</div>										
+							</div>
+            </div>
+            <div class="carousel-item">
+              <div class="mt-2">					
+								<div class="quote-sep">
+									<p>"I still enjoy traveling a lot. I mean, it amazes me that I still get excited in 
+                       hotel rooms just to see what kind of shampoo they've left me."</p>
+									<span class="text-uppercase">Michael Brighton</span>
+								</div>										
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-dark-2 py-5">
+      <div class="container py-2">
+        <div class="row">
+          <div class="col-md-12 text-center">	
+            <h5 class="color-grey py-3 text-uppercase">A new dimension of luxury.</h5>
+            <p class="color-white mt-3 mb-3"><i>our presentation, 0:48 min</i></p>
+            <a href="#" class="video-button"><i class="fa fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end comments -->
+
+<!-- start dining -->
+<section class="dining my-5">
+    <div class="container">
+      <div class="m-auto">
+        <div class="subtitle with-line text-center mb-4">Excellent restaurant</div>
+        <h2 class="text-center">Dining & Bars</h2>
+      </div>
+      
+    <div class="row my-5">
+      <div class="col-lg-6 col-md-12 m-0 p-0 position-relative order-lg-1 order-md-1 order-sm-1 order-1">
+        <img src="assets/img/rest-1.jpg" alt="restaurant1 pic" class="img-fluid w-100">
+      </div>
+      <div class="col-lg-6 col-md-12 m-0 p-0 py-5 order-lg-1 order-md-2 order-sm-2 order-1">
+       <div class="check text-center">
+        <h2 class="font-special">Beach Restaurant</h2>
+        <p class=" mt-4">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque<br>
+                         ipsa quae ab illo inventore veritatis et.
+        </p>
+        <button class="text-uppercase ">explore</button>
+       </div>
+      </div>
+      <div class="col-lg-6 col-md-12 m-0 p-0 py-5 order-lg-1 order-md-5 order-sm-4 order-4">
+        <div class="check text-center">
+         <h2 class="font-special">Pool Restaurant</h2>
+         <p class=" mt-4">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque<br> 
+                          ipsa quae ab illo inventore veritatis et.
+         </p>
+         <button class="text-uppercase ">explore</button>
+        </div>
+       </div>
+       <div class="col-lg-6 col-md-12 m-0 p-0 position-relative order-lg-1 order-md-2 order-sm-1 order-2">
+        <img src="assets/img/rest-2.jpg" alt="restaurant2 pic" class="img-fluid w-100">
+      </div>
+    </div>
+    </div>
+</section>
+<!-- end dining -->
+
+<!-- start get in touch -->
+<section class="get-in-touch my-5">
+  <div class="container">
+    <div class="m-auto">
+      <div class="subtitle with-line text-center mb-4">get in touch</div>
+      <h2 class="text-center">Drop Us A Line</h2>
+    </div>
+    <div class="row justify-content-center mt-5 ">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 info">
+          <div class="item py-1">
+          <p class="item-in black">Address:</p>
+          <p class="item-in text-end">Avenue Str. 328</p>
+          </div>
+          <div class="item py-1">
+          <p class="item-in black">Phone:</p>
+          <p class="item-in text-end">+21 60 374 7537</p>
+          </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 info">
+          <div class="item py-1">
+          <p class="item-in black">City:</p>
+          <p class="item-in text-end">Thessaloniki</p>
+          </div>
+          <div class="item py-1">
+          <p class="item-in black">Email:</p>
+          <p class="item-in text-end">info@hotel.com</p>
+          </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row justify-content-center  mb-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 info">
+          <div class="item py-1">
+          <p class="item-in black">Check-In:</p>
+          <p class="item-in text-end">14:00 pm</p>
+          </div>
+          <div class="item py-1">
+          <p class="item-in black">Check-Out:</p>
+          <p class="item-in text-end">11:00 am</p>
+          </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="text-center my-5">
+      <p class="mb-0"><i>available at: 8am - 10pm</i></p>
+      <h2 class="opacity-50">+21 60 374 7537</h2>
+    </div>
+  </div>
+</section>
+<!-- end get in touch -->
+
+<!-- start footer -->
+<section class="position-relative mt-5 pt-5">
+    <div class="position-relative">
+      <div class="container subscibe">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="subscribe-home">
+              <input type="text" placeholder="your email here">
+              <button data-lang="en">subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="images ">
+      <div class="d-flex">
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/1-s.jpg" alt="pool pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/2-s.jpg" alt="room pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/3-s.jpg" alt="room pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/4-s.jpg" alt="bathroom pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/5-s.jpg" alt="room pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/6-s.jpg" alt="room pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+        <div class="position-relative p-0">
+          <a href="#">
+            <div class="w-100 gallery-small">
+              <img src="assets/img/8-s.jpg" alt="room pic" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+<footer class="bg-black pt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center text-md-start">
+          <img src="assets/img/logo (1).png" alt="logo img">
+          <p class="color-grey mt-4">Avenue Street 3284<br>Thessaloniki</p>
+        </div>
+        <div class="col-md-4 text-center text-md-start">
+          <h3 class="text-white text-uppercase mb-3">information</h3>
+          <a href="tandc.html" class="text-decoration-none">terms &amp; conditions</a>
+          <a href="services.html" class="text-decoration-none">services</a>
+          <a href="restaurant.html" class="text-decoration-none">restaurant</a>
+          <a href="testimonials.html" class="text-decoration-none">testimonials</a>
+          <a href="gallery.html" class="text-decoration-none">gallery &amp; images</a>
+        </div>
+        <div class="col-md-5 mt-4 mt-md-0 text-center text-md-start logos-footer">
+          <h3 class="text-white text-uppercase mb-3">about us</h3>
+          <p class="color-grey mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+                                    blanditiis praesentium voluptatum deleniti atque corrupti quos 
+                                    dolores.</p>
+          <img src="assets/img/1.png" alt="footer log1">
+          <img src="assets/img/2.png" alt="footer log2">
+          <img src="assets/img/3.png" alt="footer log3">
+        </div>
+      </div>	
+    </div>
+</footer>
+<section class="footer-bottom py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>2023  &copy; Thalia. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="social-footer-bottom text-decoration-none">facebook</a>
+          <a href="#" class="social-footer-bottom text-decoration-none">twitter</a>
+          <a href="#" class="social-footer-bottom text-decoration-none">instagram</a>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end footer -->
+<!-- bootstrap 5.3 -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/input.js"></script>
+</body>
+</html>
